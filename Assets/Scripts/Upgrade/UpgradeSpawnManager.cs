@@ -47,6 +47,7 @@ public class UpgradeSpawnManager : MonoBehaviour
                 spawnTime = Time.time + Random.Range(minTimeSpawn, maxTimeSpawn);
                 GameObject go;
 
+                //Get random upgrade from pool if upgrades amount more than one
                 if (upgrades.Length > 1)
                 {
                     string upgrade = upgrades[Random.Range(0, upgrades.Length)].name;
@@ -59,7 +60,7 @@ public class UpgradeSpawnManager : MonoBehaviour
                 upgradeSpawnPos.x = Random.Range(-bound.x, bound.x);
                 go.transform.position = upgradeSpawnPos;
 
-                //Subscribe
+                //Add to array
                 var upgradeComponent = go.GetComponent<UpgradeBase>();
                 activeUpgrades.Add(upgradeComponent);
             }

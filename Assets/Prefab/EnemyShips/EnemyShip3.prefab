@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4704092710639808932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 1.259, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4704092710966167498}
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthSystem: {fileID: 0}
   minShootDelay: 2
-  maxShootDelay: 5
+  maxShootDelay: 2
 --- !u!114 &4704092710966167505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5832cc69a10ffdc4e913469c7be8f513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 7
-  maxHealth: 7
+  health: 9
+  maxHealth: 9
 --- !u!114 &4704092710303275556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +209,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3764221615439953848, guid: e290d30240673d248aae498e2b5e76f3,
     type: 3}
   fireDelay: 1
+  projectileAmount: 5
 --- !u!114 &4704092710303275555
 MonoBehaviour:
   m_ObjectHideFlags: 0

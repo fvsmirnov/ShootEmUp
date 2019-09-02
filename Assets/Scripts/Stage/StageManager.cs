@@ -12,7 +12,7 @@ public class StageManager : MonoBehaviour
 
     [Header("Loop settings")]
     public bool loop;
-    [Tooltip("Replace enemy prefab after complete all stages in loop")]
+    [Tooltip("Replace enemy prefab after complete one cycle")]
     public GameObject[] loopEnemys;
 
     private int currentStageIndex;
@@ -20,12 +20,6 @@ public class StageManager : MonoBehaviour
     private Stage currentStage;
 
     public void ResetData()
-    {
-        SetDefaultValues();
-        ExecuteStage();
-    }
-
-    private void SetDefaultValues()
     {
         //Init stage
         currentStageIndex = (startStage != 0 && stages[startStage] != null) ? startStage : 0;
@@ -35,6 +29,18 @@ public class StageManager : MonoBehaviour
         completeLoopCount = 0;
         if (loop && loopEnemys.Length > 0)
             currentStage.enemyPrefab = loopEnemys[0];
+    }
+
+    public void LoadStage()
+    {
+        if (!loop && currentStageIndex == stages.Length - 1)    //Return if it last stage and without loop
+            return;
+
+        SetStage(currentStageIndex);
+        SetEnemyPrefab();
+
+        currentStage.gameObject.SetActive(true);
+        currentStage.Execute();
     }
 
     private void Awake()
@@ -47,19 +53,7 @@ public class StageManager : MonoBehaviour
 
     private void Start()
     {
-        ExecuteStage();
-    }
-
-    private void ExecuteStage()
-    {
-        if (!loop && currentStageIndex == stages.Length - 1)    //Return if it last stage and without loop
-            return;
-
-        SetStage(currentStageIndex);
-        SetEnemyPrefab();
-
-        currentStage.gameObject.SetActive(true);
-        currentStage.Execute();
+        LoadStage();
     }
 
     //Replace current stage by one of the list.
@@ -78,7 +72,7 @@ public class StageManager : MonoBehaviour
     private void NextStage()
     {
         ChangeStageIndex();
-        ExecuteStage();
+        LoadStage();
     }
 
     private void ChangeStageIndex()
@@ -107,7 +101,7 @@ public class StageManager : MonoBehaviour
 
     private void SetEnemyPrefab()
     {
-        if (loop)
+        if (loop && loopEnemys.Length > 0)
             currentStage.enemyPrefab = loopEnemys[completeLoopCount];
     }
 }

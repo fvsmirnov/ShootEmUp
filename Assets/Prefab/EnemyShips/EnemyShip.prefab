@@ -176,8 +176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSystem: {fileID: 0}
-  minShootDelay: 3
-  maxShootDelay: 6
+  minShootDelay: 1
+  maxShootDelay: 1
 --- !u!114 &4704092710966167505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +209,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3764221615439953848, guid: be84dcd19aa43c9429f56c247953497b,
     type: 3}
   fireDelay: 1
+  projectileAmount: 1
 --- !u!114 &4704092710303275555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,4 +223,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  speed: 0.1
+  speed: 0.25

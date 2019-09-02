@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7853292680248524535}
   - component: {fileID: 7853292680248524532}
   - component: {fileID: 7853292680248524533}
+  - component: {fileID: 2360253256230419981}
   m_Layer: 0
   m_Name: Barrels
   m_TagString: Untagged
@@ -54,7 +55,8 @@ MonoBehaviour:
   barrels:
   - {fileID: 7853292681165692332}
   bulletPrefab: {fileID: 0}
-  fireDelay: 1
+  fireDelay: 0.1
+  projectileAmount: 1
 --- !u!114 &7853292680248524535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +73,8 @@ MonoBehaviour:
   - {fileID: 7853292680794196168}
   - {fileID: 7853292681670966391}
   bulletPrefab: {fileID: 0}
-  fireDelay: 1
+  fireDelay: 0.1
+  projectileAmount: 1
 --- !u!114 &7853292680248524532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +92,8 @@ MonoBehaviour:
   - {fileID: 7853292680794196168}
   - {fileID: 7853292681670966391}
   bulletPrefab: {fileID: 0}
-  fireDelay: 1
+  fireDelay: 0.1
+  projectileAmount: 1
 --- !u!114 &7853292680248524533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +113,26 @@ MonoBehaviour:
   - {fileID: 7853292681925273437}
   - {fileID: 7853292680648251677}
   bulletPrefab: {fileID: 0}
-  fireDelay: 1
+  fireDelay: 0.1
+  projectileAmount: 1
+--- !u!114 &2360253256230419981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7853292680248524531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4476949f14b46714f9959ccc4c4d2f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barrels:
+  - {fileID: 7853292681925273437}
+  - {fileID: 7853292680648251677}
+  bulletPrefab: {fileID: 0}
+  fireDelay: 0.3
+  projectileAmount: 1
 --- !u!1 &7853292680648251674
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,8 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5832cc69a10ffdc4e913469c7be8f513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  maxHealth: 1
+  health: 5
+  maxHealth: 5
 --- !u!114 &7853292681257681472
 MonoBehaviour:
   m_ObjectHideFlags: 0

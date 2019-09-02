@@ -8,6 +8,7 @@ public class WeaponUpgrade : UpgradeBase
     private Transform _transform;
     private readonly Vector3 moveDirection = Vector3.down;
 
+    [SerializeField] GameObject projectilePrefab;
     [SerializeField] private int speed = 3;
     [SerializeField] private int weaponId = 0;
     [SerializeField] private float duration = 15f;
@@ -20,7 +21,7 @@ public class WeaponUpgrade : UpgradeBase
     protected override void Execute(Collider2D collision)
     {
         WeaponSystem weaponSystem = collision.GetComponent<WeaponSystem>();
-        weaponSystem.SetWeapon(weaponId, duration);
+        weaponSystem.SetWeapon(weaponId, duration, false, projectilePrefab);
     }
 
     protected void LateUpdate()

@@ -7,6 +7,7 @@ public class Path : MonoBehaviour
     public int lineSteps = 10;
     public Transform[] waypoints = new Transform[4];
 
+    //Show path in editor
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;

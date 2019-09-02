@@ -42,13 +42,71 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 69c2773ec07a31042be81619ab63c1b4, type: 3}
-    totalSpriteSurfaceArea: 21334
+    totalSpriteSurfaceArea: 479702
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 1849df55d1aa4834fb1705e11051fbdb, type: 3}
+  - {fileID: 7347455643470211597, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 5631794300062383622, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -5048269423739333186, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 1873768208095347514, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 4580393802095868653, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 8051247662070171453, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 5615592511313031552, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -3821589936516232733, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 3270815897989025270, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 8038407154457212446, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 3234943497968411492, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -4811486897288621873, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -6465259571401206585, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -600587112016110855, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 3429535801385235544, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 9203862782438228840, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -1432887671553056278, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 6499866451367633041, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 3663825974817843685, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 5024723353076474334, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -7525756535106046107, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -1989785589519085518, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -8083081020939670977, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 3909529097053313457, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -2557334815876096670, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: -5229154587372201322, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 1593364748886651179, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
+  - {fileID: 2880086908598106702, guid: 9b00d4474b57e004ca98973b7d1ccc20, type: 3}
   - {fileID: 21300000, guid: ccf0214923fd4454aad3ad4c241a0de5, type: 3}
   - {fileID: 21300000, guid: cb7912cdeb650ee42bf2a7115ceec580, type: 3}
   m_PackedSpriteNamesToIndex:
+  - rocket
+  - preset_explosion_fire_8
+  - preset_explosion_fire_9
+  - preset_explosion_fire_4
+  - preset_explosion_fire_5
+  - preset_explosion_fire_6
+  - preset_explosion_fire_7
+  - preset_explosion_fire_0
+  - preset_explosion_fire_1
+  - preset_explosion_fire_2
+  - preset_explosion_fire_3
+  - preset_explosion_fire_17
+  - preset_explosion_fire_16
+  - preset_explosion_fire_15
+  - preset_explosion_fire_14
+  - preset_explosion_fire_13
+  - preset_explosion_fire_12
+  - preset_explosion_fire_11
+  - preset_explosion_fire_10
+  - preset_explosion_fire_22
+  - preset_explosion_fire_23
+  - preset_explosion_fire_20
+  - preset_explosion_fire_19
+  - preset_explosion_fire_21
+  - preset_explosion_fire_18
+  - preset_explosion_fire_26
+  - preset_explosion_fire_27
+  - preset_explosion_fire_24
+  - preset_explosion_fire_25
   - Machine Gun
   - Ball_02
   m_Tag: projectiles

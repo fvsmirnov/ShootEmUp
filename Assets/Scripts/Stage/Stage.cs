@@ -42,6 +42,8 @@ public class Stage : MonoBehaviour, IStage
         }
     }
 
+    //Decrease active ships.
+    //Called when subscibed ship destroyed
     void RecountActiveShips(object sender, EventArgs e)
     {
         var ship = (EnemyShip)sender;
@@ -54,6 +56,7 @@ public class Stage : MonoBehaviour, IStage
                 OnStageComplete();
     }
 
+    //Set default values
     bool reset = false;
     public void ResetData()
     {

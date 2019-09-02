@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4704092710639808932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4704092710966167498}
@@ -65,6 +65,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.2, z: 1}
   m_Children:
   - {fileID: 4704092710639808935}
+  - {fileID: 14964475242652808}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fc2aa2ac46d013a48822b6209ff7cc60, type: 3}
-  m_Color: {r: 0.87480474, g: 0.5707547, b: 1, a: 1}
+  m_Color: {r: 0.88999414, g: 0.6839622, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -176,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSystem: {fileID: 0}
-  minShootDelay: 3
-  maxShootDelay: 6
+  minShootDelay: 1
+  maxShootDelay: 2
 --- !u!114 &4704092710966167505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,9 +207,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barrels:
   - {fileID: 4704092710639808935}
+  - {fileID: 14964475242652808}
   bulletPrefab: {fileID: 3764221615439953848, guid: be84dcd19aa43c9429f56c247953497b,
     type: 3}
   fireDelay: 1
+  projectileAmount: 1
 --- !u!114 &4704092710303275555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,4 +225,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
-  speed: 0.15
+  speed: 0.25
+--- !u!1 &8516397685372262347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14964475242652808}
+  m_Layer: 0
+  m_Name: Gun2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &14964475242652808
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516397685372262347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4704092710966167498}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

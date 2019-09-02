@@ -10,25 +10,25 @@ public class WeaponSystem : MonoBehaviour
     private IWeapon currentWeapon;
     private IEnumerator upgradeWorkTime;
 
-    private void Start()
-    {
-        weapons = GetComponentsInChildren<IWeapon>();
-        SetBullet(bulletPrefab);
-        SetDefaultWeapon();
-    }
-
     public void Shoot()
     {
         currentWeapon.Shoot();
     }
 
+    /// <summary>
+    /// Set bullet prefab to all weapons
+    /// </summary>
     public void SetBullet(GameObject bulletPrefab)
     {
         for (int i = 0; i < weapons.Length; i++)
             weapons[i].Bullet = bulletPrefab;
     }
 
-    public void SetWeapon(int weaponId, float time = 15f, bool isUnlimited = false, GameObject bulletPrefab = null) //set private
+    /// <summary>
+    /// Set weapon for some time
+    /// </summary>
+    /// <param name="duration">Ignore if is unlimited true</param>
+    public void SetWeapon(int weaponId, float duration = 15f, bool isUnlimited = false, GameObject bulletPrefab = null) //set private
     {
         if(weapons[weaponId] != null)
         {
@@ -43,7 +43,7 @@ public class WeaponSystem : MonoBehaviour
                 if(upgradeWorkTime != null)
                     StopCoroutine(upgradeWorkTime);
 
-                upgradeWorkTime = UpgradeWorkTime(Time.time + time);
+                upgradeWorkTime = UpgradeWorkTime(Time.time + duration);
                 StartCoroutine(upgradeWorkTime);
             }
         }   
@@ -54,13 +54,20 @@ public class WeaponSystem : MonoBehaviour
         SetWeapon(0, isUnlimited: true, bulletPrefab: bulletPrefab);
     }
 
+
+    private void Start()
+    {
+        weapons = GetComponentsInChildren<IWeapon>();
+        SetBullet(bulletPrefab);
+        SetDefaultWeapon();
+    }
+
     private IEnumerator UpgradeWorkTime(float time)
     {
         while (Time.time < time)
         {
             yield return null;
         }
-
         SetDefaultWeapon();
     }
 }

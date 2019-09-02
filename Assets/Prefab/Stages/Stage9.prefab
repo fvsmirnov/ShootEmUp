@@ -132,12 +132,12 @@ GameObject:
   - component: {fileID: 2945211859380226248}
   - component: {fileID: 1043521277}
   m_Layer: 0
-  m_Name: Stage8
+  m_Name: Stage9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2945211859380226249
 Transform:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 2945211859380226248}
-  enemyPrefab: {fileID: 4704092710966167497, guid: 3803fc7a2d4d759428fdc12c3fb365bc,
+  enemyPrefab: {fileID: 4704092710966167497, guid: 105a04c418c7c1346a6b1d8f7517d5e9,
     type: 3}
   enemyCount: 5
   spawnEnemyDelay: 1

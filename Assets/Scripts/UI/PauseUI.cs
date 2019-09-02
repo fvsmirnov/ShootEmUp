@@ -41,6 +41,9 @@ public class PauseUI : MonoBehaviour
         UpgradeSpawnManager.Instance.ResetData();
         UIScore.Instance.ResetData();
         PlayerController.Instance.Spawn();
+
+        SpawningPool.RecycleActiveObjects();
+        StageManager.Instance.LoadStage();
     }
 
     public void Exit()

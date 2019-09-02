@@ -127,4 +127,4 @@ MonoBehaviour:
   enemy: 1
   player: 0
   damageAmount: 1
-  lifeTime: 3
+  lifeTime: 0.7

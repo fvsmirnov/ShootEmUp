@@ -35,10 +35,13 @@ public class EnemyShip : ShipBehaviour, IPooledObject
         if (Time.time >= shootTime)
         {
             weapon.Shoot();
-            shootTime += UnityEngine.Random.Range(minShootDelay, maxShootDelay);
+            shootTime = SetShootDelay();
         }
     }
 
+    /// <summary>
+    /// Set next shoot time
+    /// </summary>
     private float SetShootDelay()
     {
         return Time.time + UnityEngine.Random.Range(minShootDelay, maxShootDelay);
@@ -60,11 +63,17 @@ public class EnemyShip : ShipBehaviour, IPooledObject
     public void PooledObjectReturnedToPool() { }
     #endregion
 
+    /// <summary>
+    /// Set path to follow
+    /// </summary>
     public void SetPath(Path path)
     {
         pathFollow.SetPath(path);
     }
 
+    /// <summary>
+    /// Set actions when gameobject destroyed
+    /// </summary>
     public override void Destroy()
     {
         UIScore.Instance.UpdateScore(100);

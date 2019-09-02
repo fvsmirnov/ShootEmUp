@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: planets
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a456fe86d78188e4f99ae117474ab9d5, type: 3}
+    - {fileID: 21300000, guid: 4ecb598b03c4c5b45bea92168edb3474, type: 3}
+    totalSpriteSurfaceArea: 5505024
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: d1633d80f997845418c21db664ba138f, type: 3}
+  - {fileID: 21300000, guid: 7d2d52905e45ae247b3390d0f42fdc49, type: 3}
+  - {fileID: 21300000, guid: 0a73328190b6a1b4787cc6921bbe0f94, type: 3}
+  - {fileID: 21300000, guid: de9bd78144a44764f99b085846a2e03a, type: 3}
+  - {fileID: 21300000, guid: ddc556a241acd514ba8409f6e064201c, type: 3}
+  - {fileID: 21300000, guid: 01e466e2fb6eea34ea00e20acc789c01, type: 3}
+  - {fileID: 21300000, guid: 709f6dc460a0f30408be2662721887c0, type: 3}
+  - {fileID: 21300000, guid: 0aab17f474ae0434eb7aff4a29cc0123, type: 3}
+  - {fileID: 21300000, guid: c37b6465dcc722340a3a437ce8dbbe96, type: 3}
+  - {fileID: 21300000, guid: 8d93f8b646fad08429a3686590a61bf7, type: 3}
+  - {fileID: 21300000, guid: 4a868e28be12a6349a2742aa1909ed42, type: 3}
+  - {fileID: 21300000, guid: a27406c97e517164cbd7003354e6739c, type: 3}
+  - {fileID: 21300000, guid: c135213a5c54f2f4984eaa105cc33b20, type: 3}
+  - {fileID: 21300000, guid: 4ecb598b03c4c5b45bea92168edb3474, type: 3}
+  - {fileID: 21300000, guid: ef1bf2ecc16140f4195ed991ac4136c1, type: 3}
+  - {fileID: 21300000, guid: 8ff5851d96e353540b1e6d34f6dafe7b, type: 3}
+  - {fileID: 21300000, guid: 765aab9d7d5f75f478521312f0b8a3dd, type: 3}
+  - {fileID: 21300000, guid: 1eebe61fa30929248bdcda4d7c3c51ec, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Sun
+  - Galaxy
+  - Water-Planet-wWih-Small-Islands
+  - red-planet-sputnik
+  - Lava-PLanet
+  - Storm-Planet
+  - Dark-PLanet
+  - earth-like
+  - Red-Planet-With-Ice
+  - Orange-Planet
+  - Sand-Planet
+  - white-dwarf-star
+  - Purple-Planet
+  - Space
+  - Ice-Planet
+  - blue-planet
+  - Red-Planet-1
+  - cyan-planet
+  m_Tag: planets
+  m_IsVariant: 0

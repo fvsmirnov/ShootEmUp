@@ -29,6 +29,7 @@ public class Projectile : MonoBehaviour, IPooledObject
         }
     }
 
+    //Apply damage when collides with ship
     private void SetDamage(Collider2D collision)
     {
         var ship = collision.GetComponent<ShipBehaviour>();
