@@ -33,7 +33,7 @@ public class UpgradeSpawnManager : MonoBehaviour
 
     private void Start()
     {
-        bound = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+        bound = GameManager.Instance.ScreenBounds();
         upgradeSpawnPos = Vector3.up * (bound.y + 1f);  //Set y spawn coord
         StartCoroutine(Spawning());
     }

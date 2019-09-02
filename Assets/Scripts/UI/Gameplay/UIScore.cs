@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIScore : MonoBehaviour
 {
+    public static Action<int> OnScoreChanged = delegate { };
     public static UIScore Instance { get; private set; }
     public Text text;
 
@@ -22,6 +24,7 @@ public class UIScore : MonoBehaviour
     {
         score += value;
         text.text = score.ToString();
+        OnScoreChanged(score);
     }
 
     public void ResetData()

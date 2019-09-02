@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height));
+        screenBounds = GameManager.Instance.ScreenBounds();
     }
 
     private void Update()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponSystem : MonoBehaviour
 {
-    public GameObject bulletPrefab;
+    public GameObject defaultBulletPrefab;
 
     private IWeapon[] weapons;
     private IWeapon currentWeapon;
@@ -36,9 +36,11 @@ public class WeaponSystem : MonoBehaviour
 
             if (bulletPrefab != null)
                 SetBullet(bulletPrefab);
+            else
+                SetBullet(defaultBulletPrefab);
 
             //Reset coroutine
-            if(!isUnlimited)
+            if (!isUnlimited)
             {
                 if(upgradeWorkTime != null)
                     StopCoroutine(upgradeWorkTime);
@@ -51,14 +53,14 @@ public class WeaponSystem : MonoBehaviour
 
     public void SetDefaultWeapon()
     {
-        SetWeapon(0, isUnlimited: true, bulletPrefab: bulletPrefab);
+        SetWeapon(0, isUnlimited: true, bulletPrefab: defaultBulletPrefab);
     }
 
 
     private void Start()
     {
         weapons = GetComponentsInChildren<IWeapon>();
-        SetBullet(bulletPrefab);
+        SetBullet(defaultBulletPrefab);
         SetDefaultWeapon();
     }
 

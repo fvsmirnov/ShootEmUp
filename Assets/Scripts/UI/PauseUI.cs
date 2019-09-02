@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseUI : MonoBehaviour
 {
     public static PauseUI Instance { get; private set; }
     public GameObject pauseWindow;
+    public Text score;
 
     private void Awake()
     {
@@ -25,6 +27,7 @@ public class PauseUI : MonoBehaviour
     public void ShowPauseWindow()
     {
         Time.timeScale = 0;
+        score.text = GameManager.Instance.score.ToString();
         pauseWindow.SetActive(true);
     }
 
@@ -37,17 +40,6 @@ public class PauseUI : MonoBehaviour
     public void TryAgain()
     {
         HidePauseWindow();
-        StageManager.Instance.ResetData();
-        UpgradeSpawnManager.Instance.ResetData();
-        UIScore.Instance.ResetData();
-        PlayerController.Instance.Spawn();
-
-        SpawningPool.RecycleActiveObjects();
-        StageManager.Instance.LoadStage();
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
+        GameManager.Instance.RestartGame();
     }
 }
