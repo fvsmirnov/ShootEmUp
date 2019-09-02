@@ -4,14 +4,9 @@
 <table style="width: 100%;">
 	<tbody>
 		<tr>
-			<td> <img src="images/0.png" align="left" width="250"> </td>
-			<td> <img src="images/1.png" align="left" width="250"> </td>
-			<td> <img src="images/2.png" align="left" width="250"> </td>
-		</tr>
-		<tr>
-			<td> </td>
-			<td> <img src="images/3.png" align="left" width="250"> </td>
-			<td> </td>
+			<td> <img src="Images/0.png" align="left" width="250"> </td>
+			<td> <img src="Images/1.png" align="left" width="250"> </td>
+			<td> <img src="Images/2.png" align="left" width="250"> </td>
 		</tr>
 	</tbody>
 </table>
